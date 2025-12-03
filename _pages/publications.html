@@ -1,36 +1,45 @@
----
-layout: archive
-title: "Publications"
-permalink: /publications/
-author_profile: true
----
+<!-- publication_item.html -->
+<div class="pub-item" style="
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+">
+  <img src="{{ include.image }}" width="120" style="margin-right: 24px; border-radius: 10px; object-fit: cover;">
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+  <div style="flex: 1;">
+    <h3 style="margin: 0 0 6px 0; font-weight: 700;">{{ include.title }}</h3>
 
-{% include base_path %}
+    <p style="margin: 0 0 4px 0; color: #555;">{{ include.authors }}</p>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+    <p style="margin: 0 0 12px 0; font-style: italic; color: #777;">{{ include.venue }}</p>
+
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      {% if include.arxiv %}
+      <a href="{{ include.arxiv }}" target="_blank" style="
+        padding: 6px 12px;
+        background: #24292e;
+        color: white;
+        border-radius: 8px;
+        font-size: 0.85em;
+        text-decoration: none;
+      ">arXiv</a>
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
 
-
-
+      {% if include.project %}
+      <a href="{{ include.project }}" target="_blank" style="
+        padding: 6px 12px;
+        background: #007bff;
+        color: white;
+        border-radius: 8px;
+        font-size: 0.85em;
+        text-decoration: none;
+      ">Project Page</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

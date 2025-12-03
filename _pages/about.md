@@ -26,6 +26,20 @@ I am an undergraduate student at [Yonsei University](https://www.yonsei.ac.kr/si
 
 ---
 
+📑 Publication
+=====
+{% for pub in site.data.publications %}
+  {% include publications.html 
+      image=pub.image
+      title=pub.title
+      authors=pub.authors
+      venue=pub.venue
+      arxiv=pub.arxiv
+      project=pub.project
+  %}
+{% endfor %}
+---
+
 💼 Experience
 ======
 {% for exp in site.data.experience %}
