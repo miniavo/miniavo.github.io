@@ -1,16 +1,16 @@
 - image: /files/paper1.png
   title: Degradation-Invariant Flow Estimation with Diffusion Features for Efficient Video Restoration
-  authors: Jaewon Min, Jaeeun Lee, Paul Hyunbin Cho, Jin Hyeon Kim, Yeji Choi, Seungryong Kim.
+  authors: Jaewon Min, <strong>Jaeeun Lee</strong>, Paul Hyunbin Cho, Jin Hyeon Kim, Yeji Choi, Seungryong Kim.
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026 (under review)
 
 - image: /files/paper2.png
   title: Text-Aware Image Restoration with Diffusion Models
-  authors: Jaewon Min, Jin Hyeon Kim, Paul Hyunbin Cho, Jaeeun Lee, Jihye Park, Minkyu Park, Sangpil Kim, Hyunhee Park, Seungryong Kim.
+  authors: Jaewon Min, Jin Hyeon Kim, Paul Hyunbin Cho, <strong>Jaeeun Lee</strong>, Jihye Park, Minkyu Park, Sangpil Kim, Hyunhee Park, Seungryong Kim.
   venue: International Conference on Learning Representations (ICLR) 2026 (under review)
   arxiv: https://arxiv.org/abs/2506.09993
   project: https://cvlab-kaist.github.io/TAIR/
 
 - image: /files/paper3.png
   title: Analysis of Aircraft Delay Prediction based on Machine Learning Algorithms.
-  authors: Junseok Hong, Jaeeun Lee, Minji Kwon, Dongwon Kim, Seokheon Cho.
+  authors: Junseok Hong, <strong>Jaeeun Lee</strong>, Minji Kwon, Dongwon Kim, Seokheon Cho.
   venue: Korean Institute of Communications and Information Sciences (KICS) 2024
