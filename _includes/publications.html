@@ -1,7 +1,6 @@
-<!-- publication_item.html -->
 <div class="pub-item" style="
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* 🔥 이미지 중앙 정렬 */
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -9,7 +8,11 @@
   margin-bottom: 24px;
   transition: all 0.3s ease;
 ">
-  <img src="{{ include.image }}" width="120" style="margin-right: 24px; border-radius: 10px; object-fit: cover;">
+  <img src="{{ include.image }}" width="160" style=" /* 🔥 이미지 가로폭 넓힘 */
+    margin-right: 24px; 
+    border-radius: 10px; 
+    object-fit: cover;
+  ">
 
   <div style="flex: 1;">
     <h3 style="margin: 0 0 6px 0; font-weight: 700;">{{ include.title }}</h3>
