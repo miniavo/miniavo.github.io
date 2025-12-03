@@ -1,0 +1,28 @@
+projects:
+  - image: "/images/motion_retargeting.gif"
+    title: "Real-time Motion Generation & Retargeting"
+    role: "AI Developer"
+    stack: "Pytorch, Git"
+    short_description: "Generate human skeleton-based motions from text input provided by users, and retarget these motions to be compatible with real-world bipedal robot platforms"
+    long_description: "We implemented an autoregressive diffusion model to generate motion sequences from text prompts. We applied a RL tracking controller in a closed loop to generate smooth motion sequences. Furthermore, we performed motion retargeting from human to bipedal agents using a body-part-level attention mechanism. We aimed for high-level control of humanoid robots through natural language commands."
+
+  - image: "/images/generative_interior.png"
+    title: "Generative Interior Design"
+    role: "AI Developer"
+    stack: "Pytorch, Git"
+    short_description: "Fine-tune ControlNet for personalized room design based on user text prompt"
+    long_description: "We processed a dataset of 300K images collected from Airbnb. We developed a pipeline for room image transformation using segmentation and inpainting with Stable Diffusion to remove furniture. Image segmentation was applied for doors and windows, and depth estimation for 3D scene understanding. Finally, we implemented image captioning for scene understanding, and fine-tuned ControlNet for personalized room design."
+
+  - image: "/images/virtual_tryon.png"
+    title: "Virtual Try-on Application"
+    role: "AI Developer"
+    stack: "Pytorch, Git"
+    short_description: "Virtual try-on service fine-tuned on LaDI-VTON to better represent Korean body types and skin types"
+    long_description: "We developed a virtual try-on service using the LaDI-VTON model to fit desired clothes to individual body types. We preprocessed 120K+ images from AI-Hub by performing pose detection (OpenPose) and human segmentation (SimpleParse) to construct a dataset similar to VTON-HD. Finally, we fine-tuned the LaDI-VTON model on the AI-Hub dataset to better represent Korean body types and skin tones."
+
+  - image: "/images/markit.png"
+    title: "MarkIT Web Service Development"
+    role: "Front-End & AI Developer"
+    stack: "Next.js, Zustand, Tailwind CSS, FastAPI, MySQL, Pinecone, Selenium, OpenAI, KoNLPy"
+    short_description: "Service that automatically recommends related bookmarks while users write contents"
+    long_description: "We developed  a service that automatically recommends related bookmarks while users write contents. We integrated GPT to encode bookmark content into a vector database for personalized recommendations. We extracted keywords from user content using TextRank to retrieve the most relevant bookmarks from the vector database."

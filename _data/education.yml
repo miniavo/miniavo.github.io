@@ -1,0 +1,16 @@
+- logo: "/images/yonsei.png"
+  title: "Yonsei University"
+  degree: "B.S in Artificial Intelligence"
+  period: "Seoul, Korea / 2022.03 - Present"
+  coursework:
+    - "Intro to Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Reinforcement Learning, AI Signal Processing, Large Language Models"
+    - "Probability and Statistics, Linear Algebra, Discrete Math, Mathematical Problems in Deep Learning"
+    - "Data Structures, Algorithms, Computer Architecture"
+    - "Multicore and GPU Programming"
+
+- logo: "/images/gatech.jpeg"
+  title: "Georgia Institute of Technology"
+  degree: "Exchange Student"
+  period: "Atlanta, Georgia / 2024.08 - 2024.12"
+  coursework:
+    - "Perception and Robotics, Knowledge Based AI, Computer Graphics, Computer Animation, Database Systems"

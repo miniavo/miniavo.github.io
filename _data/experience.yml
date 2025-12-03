@@ -1,0 +1,29 @@
+- role: "Undergraduate Research Assistant"
+  company: "CVLAB, KAIST"
+  period: "Jan 2025 - Present"
+  responsibilities:
+    "Researched text-aware image restoration of degraded images, using diffusion model’s strong generative prior. Conduted experiments on VLM-based text recognition and filtering capability. Exploring how vision generation and understanding can work together to mutually attend and enhance image quality."
+
+- role: "Participant"
+  company: "USC Summer Program"
+  period: "2025.07 - 2025.08"
+  responsibilities:
+    "Attended technical lectures on fundamental concepts in AI and data science to apply AI for problem solving. Conducted hands-on projects on road damage object detection and fruit image classification."
+
+- role: "Undergraduate Research Assistant"
+  company: "Medical Imaging Systems Lab, Yonsei "
+  period: "2023.09 - 2025.02"
+  responsibilities:
+    "Studied medical physics and implemented CT projection and filtered back projection in Python. Trained U-Net and RED-CNN on 3K Mayo Clinic CT Scans using PyTorch for denoising, and investigated various image processing solutions. Furthermore, explored ControlNet training on CT data and evaluated denoised low-dose CT image quality."
+    
+- role: "Machine Learning Research Engineer"
+  company: "GoodGang Labs"
+  period: "2024.12 - 2025.03"
+  responsibilities:
+    "Performed advanced data augmentation (multi-turn, multi-lingual, fine-grained) on funtion call datasets (ToolAlpaca, ToolBench) using DeepSeek-R1 and Gemini. Fine-tuned small language models on function call datasets with the Unsloth framework, improving function call alignment. Evaluated and analyzed function call datasets with Berkeley Function Call Leaderboard (BFCL) scoring pipeline."
+    
+- role: "Participant, Project Lead"
+  company: "Qualcomm Institute AI Development Program"
+  period: "2024.01 - 2024.02"
+  responsibilities:
+    "Attended technical lectures, review sessions, and seminars on AI/ML algorithms at UCSD. Conducted a project on predicting aircraft delay using 4 different ML models. Processed 1.5M flight and weather data entries from BTS and Visual Crossing Weather Data."

@@ -1,0 +1,58 @@
+<div class="projects-container" style="display: flex; flex-direction: column; gap: 30px;">
+  {% for project in site.data.project.projects %}
+  <div class="project-item" style="display: flex; gap: 25px; align-items: flex-start;">
+    
+    <!-- 왼쪽 이미지 -->
+    <img src="{{ project.image }}" alt="{{ project.title }}" style="
+      width: 250px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 12px;
+      flex-shrink: 0;
+    ">
+
+    <!-- 오른쪽 텍스트 -->
+    <div style="flex:1; display: flex; flex-direction: column; gap: 4px;">
+      <h4 style="margin:0; font-size: 1.1em; font-weight: 600;">{{ project.title }}</h4>
+      <span style="font-size:0.85em; color:#666;">{{ project.role }}</span>
+      <span style="font-size:0.85em; color:#666;">{{ project.stack }}</span>
+      
+      <p class="short-desc" style="margin:4px 0 0 0; font-size:0.9em; color:#333; line-height:1.5;">
+        {{ project.short_description }} 
+        <span class="toggle-detail" style="color:#999; cursor:pointer; font-style:italic; text-decoration:underline; font-size:0.8em;">
+          Show Detail
+        </span>
+      </p>
+      <p class="long-desc" style="margin:4px 0 0 0; font-size:0.9em; color:#333; line-height:1.5; display:none;">
+        {{ project.long_description }} 
+        <span class="toggle-detail" style="color:#999; cursor:pointer; font-style:italic; text-decoration:underline; font-size:0.8em;">
+          Hide Detail
+        </span>
+      </p>
+    </div>
+
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.projects-container').forEach(container => {
+    container.querySelectorAll('.toggle-detail').forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const p = toggle.closest('p');
+        const shortDesc = p.closest('.project-item').querySelector('.short-desc');
+        const longDesc = p.closest('.project-item').querySelector('.long-desc');
+
+        if(shortDesc.style.display !== 'none'){
+          shortDesc.style.display = 'none';
+          longDesc.style.display = 'block';
+        } else {
+          shortDesc.style.display = 'block';
+          longDesc.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
